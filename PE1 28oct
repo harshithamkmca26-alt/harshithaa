@@ -1,1 +1,62 @@
+# prompt engineering assignment
+#prompt 1
+###objective
+An e-commerce company receives numerous customer queries related to orders,
+deliveries, payments, refunds, cancellations, and product defects. Your task is to design
+an effective prompt that classifies each customer query into the appropriate predefined
+category.
+prompt 
+Classify the customer’s query into one of these categories: Delivery, Shipping, Refund, Payment, Cancellation, Defect, Return, Account, or Unknown.
 
+Input: A customer query.
+
+Output: Give only one category name without any explanation.
+
+Example: “My order has not arrived yet.”
+output: delivery
+
+
+#prompt 2 
+###objective
+input1: this product is not good, 
+this is just a waste of money, 
+not worth,
+give my money back, 
+quality is not good,
+bad product,
+not happy,
+damaged product,
+i have ordered a different colour and which i got is different one,
+i got a different product. 
+output1: NEGATIVE. 
+input2: better, 
+good but it could i need more quality more than this, 
+its just a normal one, 
+okay. 
+output2: NEUTRAL. 
+input3: damn so stunning,
+im so happy,
+worth the money,
+amazing,
+it is really a good product,
+excellent one,
+very happy for the product which i got,
+on time delivery. 
+output3 POSITIVE.
+input4: if any of the above key points are not present than give the output as invalid 
+output: INVALID
+customer review: " the product is very good"
+
+output: POSITIVE
+
+customer review: " not satisfied , but it is good "
+
+output: NEUTRAL
+
+customer review: " not worth "
+
+output: NEGATIVE
+
+customer review: " what is your name"
+
+output: INVALID
